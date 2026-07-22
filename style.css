@@ -8,6 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Keep section headings visible below the sticky nav when jumping to anchors */
+[id] {
+    scroll-margin-top: 70px;
+}
+
 body {
     background-color: rgb(241, 224, 199);
     font-family: 'Inter', sans-serif;
@@ -15,16 +20,81 @@ body {
     line-height: 1.7;
 }
 
-header {
+.hero {
     background-color: #3C280D;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-    font-weight: 600;
+    background-image: linear-gradient(160deg, #3C280D 0%, #2a1a0a 100%);
     color: #f5ebe0;
     text-align: center;
-    padding: 60px 20px;
+    padding: 90px 20px 80px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
+    color: #c8a882;
+    margin-bottom: 8px;
+}
+
+.hero-tagline {
+    font-size: 15px;
+    color: #e0cdb5;
+    margin-bottom: 32px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s, transform 0.15s;
+}
+
+.btn:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.btn-solid {
+    background-color: #c8a882;
+    color: #2a1a0a;
+    border: 1px solid #c8a882;
+}
+
+.btn-solid:hover {
+    background-color: #f5ebe0;
+    border-color: #f5ebe0;
+}
+
+.btn-outline {
+    border: 1px solid #c8a882;
+    color: #c8a882;
+}
+
+.btn-outline:hover {
+    background-color: #c8a882;
+    color: #2a1a0a;
 }
 
 nav {
@@ -92,8 +162,25 @@ h2 {
 }
 
 
+/* Headings sit at the top of each section; spacing comes from .section-block */
 main h2:first-child {
     margin-top: 0;
+}
+
+.section-block {
+    margin-top: 72px;
+}
+
+main .section-block:first-child {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.skill-tag {
+    max-width: 100%;
 }
 
 .about-layout {
@@ -125,6 +212,15 @@ main h2:first-child {
     margin-top: 0;
 }
 
+.about-content p {
+    margin-bottom: 14px;
+}
+
+.about-seeking {
+    font-weight: 600;
+    color: #7a4f2a;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -139,13 +235,21 @@ ul li {
     display: flex;
     align-items: stretch;
     margin-top: 32px;
-    border-radius: 6px;
+    border-left: 3px solid #3C280D;
+    background-color: rgba(60, 40, 13, 0.05);
+    border-radius: 0 6px 6px 0;
     overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(42, 26, 10, 0.12);
 }
 
 .project-info {
     flex: 1;
-    padding: 48px;
+    padding: 32px;
 }
 
 .project-info h3 {
@@ -230,6 +334,34 @@ a:hover {
     border-left: 3px solid #3C280D;
     background-color: rgba(60, 40, 13, 0.05);
     border-radius: 0 6px 6px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(42, 26, 10, 0.12);
+}
+
+.contact-lead {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.contact-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a5f33;
+    min-width: 80px;
 }
 
 .experience-header {
@@ -263,7 +395,7 @@ a:hover {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #c8a882;
+    color: #8a5f33;
     white-space: nowrap;
     padding-top: 2px;
 }
@@ -294,9 +426,17 @@ footer {
 }
 
 @media (max-width: 700px) {
-    header {
-        font-size: 20px;
-        padding: 40px 16px;
+    .hero {
+        padding: 56px 16px 48px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
     }
 
     nav {

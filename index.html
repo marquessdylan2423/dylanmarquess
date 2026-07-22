@@ -3,44 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dylan Marquess | Portfolio</title>
+<title>Dylan Marquess | Electrical Engineering Student</title>
+<meta name="description" content="Dylan Marquess — Electrical Engineering student at The University of Alabama. Honors College, engineering intern at Ox Bodies, seeking engineering internships.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%233C280D'/><text x='50' y='72' font-family='sans-serif' font-size='52' font-weight='bold' text-anchor='middle' fill='%23f5ebe0'>DM</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Dylan Marquess &mdash; Electrical Engineering Student</header>
+    <header class="hero">
+        <h1>Dylan Marquess</h1>
+        <p class="hero-subtitle">Electrical Engineering Student &middot; The University of Alabama</p>
+        <p class="hero-tagline">Honors College &middot; STEM Path to MBA &middot; Engineering Intern at Ox Bodies</p>
+        <div class="hero-actions">
+            <a href="Resume_DylanMarquess_7-21-26.pdf" target="_blank" class="btn btn-solid">View Resume</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+    </header>
     <nav>
         <a href="#about">About Me</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
+        <a href="#honors">Honors</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a href="Resume_DylanMarquess_5-27-26.pdf" download class="nav-resume">Resume</a>
+        <a href="Resume_DylanMarquess_7-21-26.pdf" target="_blank" class="nav-resume">Resume</a>
     </nav>
     <div class="about-layout">
         <img class="headshot" src="Headshot - BlackSuit.jpeg" alt="Headshot of Dylan Marquess">
         <div class="about-content">
             <h2 id="about">About Me</h2>
-            <p>I am a freshman at the University of Alabama pursuing an electrical engineering
-            degree while on the STEM path to MBA. I am also getting a minor in mathematics. I have
-            a great interest in learning the way things work and love learning something new everyday!
-            In my free time you can probably find me golfing, working or just enjoying fellowship with my friends.</p>
+            <p>I'm an electrical engineering student at The University of Alabama, where I'm an
+            Honors College student pursuing a minor in mathematics on the STEM Path to MBA. My first
+            engineering internship at Ox Bodies put me on the shop floor solving real design problems
+            &mdash; and confirmed that I learn best with my hands on the hardware.</p>
+            <p>Outside the classroom, I lead: chairing the IFC New Member Education Committee across
+            34 fraternity chapters and running social media for UA's National Marrow Donor Program
+            chapter. When I'm not studying or working, you'll find me on the golf course or enjoying
+            fellowship with friends.</p>
+            <p class="about-seeking">Currently seeking engineering internship opportunities where I can
+            contribute, learn fast, and build things that matter.</p>
         </div>
     </div>
 
     <main>
         <section class="section-block">
+            <h2 id="education">Education</h2>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">B.S. in Electrical Engineering</span>
+                        <span class="experience-org">The University of Alabama &middot; Tuscaloosa, AL</span>
+                    </div>
+                    <span class="experience-date">Expected May 2029</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Minor in Mathematics &middot; GPA 3.38 / 4.00</li>
+                    <li>Honors College &middot; STEM Path to the MBA program</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-block">
             <h2 id="skills">Skills</h2>
             <div class="skills-grid">
-                <span class="skill-tag">c++</span>
-                <span class="skill-tag">C</span>
-                <span class="skill-tag">HTML/CSS/JavaScript</span>
-                <span class="skill-tag">Beginner Circuit Analysis</span>
-                <span class="skill-tag">AutoCad </span>
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">HTML / CSS / JavaScript</span>
+                <span class="skill-tag">Ladder Logic</span>
+                <span class="skill-tag">J1939 / CAN</span>
                 <span class="skill-tag">Embedded Systems</span>
-                <span class="skill-tag">Microsoft Office</span>
-                
+                <span class="skill-tag">Arduino</span>
+                <span class="skill-tag">ESP32</span>
+                <span class="skill-tag">Circuit Analysis</span>
+                <span class="skill-tag">SolidWorks</span>
+                <span class="skill-tag">AutoCAD</span>
+                <span class="skill-tag">Fusion</span>
+                <span class="skill-tag">TinkerCAD</span>
+                <span class="skill-tag">Engineering Drawings</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">Microsoft Office Specialist (Certified)</span>
             </div>
         </section>
 
@@ -50,68 +92,146 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <span class="experience-title">Process Engineer Intern</span>
-                        <span class="experience-org">Ox Bodies (Federal Signal Subsidiary)</span>
+                        <span class="experience-title">Engineering Intern</span>
+                        <span class="experience-org">Ox Bodies</span>
                     </div>
-                    <span class="experience-date">May 2026 - Present</span>
+                    <span class="experience-date">May 2026 &ndash; Present</span>
                 </div>
                 <ul class="experience-details">
-                    <li>Designed and assembled a wiring harness display board for demonstration prior to the new harness launch. Used by over 100 employees as a visual aid.</li>
-                    <li>Surveyed and documented truck bed defects to find trends and diagnose the patterns.</li>
+                    <li>Conducted a Statistical Process Control (SPC) study on the assembly line and determined Stop 1 was statistically out of control, producing parts with 18% variance.</li>
+                    <li>Designed and built a wiring harness display board used to demonstrate installation procedures to 30+ installation workers, and to showcase new control tower features to customers.</li>
+                    <li>Collected dimensional measurements from 8+ body components to assess machine capabilities and identify defects, then collaborated with a team of 5 engineers to correct the processes.</li>
+                    <li>Worked directly with the General Manager and Plant Manager to provide an alternative point of view on plant processes and business logistics, leading to a potential change in work schedule.</li>
                 </ul>
             </div>
 
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <span class="experience-title">Role</span>
-                        <span class="experience-org">Organization</span>
+                        <span class="experience-title">Chair, New Member Education Committee</span>
+                        <span class="experience-org">Interfraternity Council (IFC)</span>
                     </div>
-                    <span class="experience-date">Month Year &ndash; Month Year</span>
+                    <span class="experience-date">January 2026 &ndash; Present</span>
                 </div>
                 <ul class="experience-details">
-                    <li>Null</li>
-                    <li>WIP.</li>
+                    <li>Lead committee meetings and coordinate speaker presentations that prepare new member educators across all 34 fraternity chapters on campus.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">Social Media Chair</span>
+                        <span class="experience-org">National Marrow Donor Program (NMDP), UA Chapter</span>
+                    </div>
+                    <span class="experience-date">January 2026 &ndash; Present</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Own the chapter's social media presence, creating and publishing content that drives bone marrow donor registration and campus awareness &mdash; helping cultivate 200+ donor registrations.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">Rush Committee</span>
+                        <span class="experience-org">FarmHouse Fraternity</span>
+                    </div>
+                    <span class="experience-date">December 2025 &ndash; Present</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Manage the full recruitment pipeline &mdash; identifying, contacting, and building relationships with prospective members from first outreach through bid acceptance.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">Vice President of Class</span>
+                        <span class="experience-org">Student Government Association (SGA)</span>
+                    </div>
+                    <span class="experience-date">May 2023 &ndash; May 2025</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Served as a connection between students, principals, and the board of education, collaborating with class officers to organize events and represent student interests.</li>
                 </ul>
             </div>
 
         </section>
 
         <section class="section-block">
+            <h2 id="honors">Honors &amp; Awards</h2>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">Order of Omega Outstanding Freshman</span>
+                    </div>
+                    <span class="experience-date">2026</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Selected from 3,000+ Greek freshmen in recognition of exceptional leadership, campus involvement, and academic achievement.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">FarmHouse Freshman of the Year</span>
+                    </div>
+                    <span class="experience-date">2025 &ndash; 2026</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Voted by peers based on character, involvement, academic success, and devotion to chapter values.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">Valedictorian</span>
+                        <span class="experience-org">Thompson High School</span>
+                    </div>
+                    <span class="experience-date">2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
             <h2 id="projects">Projects</h2>
             <div class="project-card">
                 <div class="project-info">
-                    <h3>Automated Watering Pot</h3>
-                    <p>Project Description</p>
+                    <h3>Automated Plant Watering System</h3>
+                    <p>An Arduino microcontroller&ndash;based watering system that monitors soil with
+                    moisture sensors and uses threshold-based logic to relay a signal to a water pump,
+                    automatically rehydrating plants when levels drop too low. Built in C, applying
+                    circuit design and embedded programming fundamentals to a practical, everyday problem.</p>
+                    <!-- TODO: Add a photo of the build:
+                         <img class="project-img" src="your-photo.jpg" alt="Automated watering system"> -->
                 </div>
-                <img class="project-img" src="" alt="Project 1">
             </div>
 
             <div class="project-card">
                 <div class="project-info">
-                    <h3>Project Title</h3>
-                    <p>Project Description</p>
+                    <h3>Portfolio Website</h3>
+                    <p>Coded and hosted this personal portfolio website from scratch in HTML and CSS to
+                    showcase my projects and experiences, deployed and version-controlled through a
+                    GitHub repository.</p>
                 </div>
-                <img class="project-img" src="" alt="Project 2">
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Project Title</h3>
-                    <p>Project Description</p>
-                </div>
-                <img class="project-img" src="" alt="Project 3">
             </div>
         </section>
 
         <section class="section-block">
             <h2 id="contact">Contact</h2>
-            <ul>
-                <li><a href="mailto:marquessdylan2423@gmail.com">marquessdylan2423@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/dylan-marquess/">LinkedIn</a></li>
-                <li><a href="https://github.com/yourusername">GitHub</a></li>
-                <li><a href="Resume_DylanMarquess_5-27-26.pdf" download>Download Resume</a></li>
-            </ul>
+            <div class="experience-card">
+                <p class="contact-lead">Interested in connecting? I'd love to hear from you.</p>
+                <ul class="contact-list">
+                    <li><span class="contact-label">Email</span><a href="mailto:marquessdylan2423@gmail.com">marquessdylan2423@gmail.com</a></li>
+                    <li><span class="contact-label">Phone</span><a href="tel:205-358-5676">205-358-5676</a></li>
+                    <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/dylan-marquess/">linkedin.com/in/dylan-marquess</a></li>
+                    <li><span class="contact-label">Resume</span><a href="Resume_DylanMarquess_7-21-26.pdf" target="_blank">View</a>&nbsp;&middot;&nbsp;<a href="Resume_DylanMarquess_7-21-26.pdf" download>Download PDF</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
